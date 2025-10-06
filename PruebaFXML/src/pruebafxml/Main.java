@@ -5,6 +5,7 @@
  */
 package pruebafxml;
 
+import java.io.File;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,11 +16,12 @@ import javafx.stage.Stage;
  *
  * @author iandasal
  */
-public class PruebaFXML extends Application {
+public class Main extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        
+        Parent root = FXMLLoader.load(getClass().getResource("LogIn.fxml"));
         
         Scene scene = new Scene(root);
         
